@@ -1,0 +1,4 @@
+<div class="logged-in-user">
+    Welcome back, <%= current_user.name%><br />
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+</div>

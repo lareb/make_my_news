@@ -1,0 +1,104 @@
+  
+  <%=form_for("user", :url => "/users") do |f| %>
+    
+      <%if flash[:notice].kind_of?(Array)%>
+        <ul class="error-box">
+          <%flash[:notice].each do |field,msg|%>
+              <li><%=field.capitalize%> <%=msg%></li>
+          <%end%>
+        </ul>
+      <%else %>
+          <%flash[:notice] -%>
+      <%end%>
+
+    <div class="left_box_2">
+
+      <h2>Post News</h2>
+      <div class="input_left">First Name:</div>
+      <div class="input_right">
+        <%=f.text_field :first_name %>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <div class="input_left">Last Name:</div>
+      <div class="input_right">
+        <%=f.text_field :last_name %>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <div class="input_left">Email:</div>
+      <div class="input_right">
+        <%=f.email_field :email%>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <div class="input_left">Password</div>
+      <div class="input_right">
+        <%=f.password_field :password %>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <div class="input_left">Confirm :</div>
+      <div class="input_right">
+        <%=f.password_field :password_confirmation %>
+      </div>
+
+    </div>
+
+
+    <div class="left_box_2">
+      <h2>&nbsp;</h2>
+      
+      <div class="input_left">Phone:</div>
+      <div class="input_right">
+        <%=f.text_field :phone %>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <div class="input_left">Address Line 1:</div>
+      <div class="input_right">
+        <%=f.text_field :address_line_1 %>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <div class="input_left">Line 2:</div>
+      <div class="input_right">
+        <%=f.text_field :address_line_2 %>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <div class="input_left">City:</div>
+      <div class="input_right">
+        <%=f.text_field :city %>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <div class="input_left">State:</div>
+      <div class="input_right">
+        <%=f.text_field :state %>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <div class="input_left">Country</div>
+      <div class="input_right">
+        <%=f.text_field :city %>
+      </div>
+
+      <div style="clear:both; margin-bottom:10px;"></div>
+      <input name="button" type="image" src="/assets/web/submit.jpg" class="buttons"/>
+    </div>
+  <%end%>
+
+
+<script type="text/javascript">
+    <%unless flash[:error].nil?%>
+        $("#sign-up").show();
+        <%flash[:error].each do |field,msg|%>
+            <%if msg.include?("<#>")%> //include ERROR symbol
+                <%msg = msg.gsub("<#>","")%>
+                $("#user_<%=field%>").addClass("error");
+            <%end%>
+            $("#user_<%=field%>").val("<%=msg%>");
+        <%end%>        
+    <%end%>    
+</script>

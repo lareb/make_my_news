@@ -1,14 +1,152 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>MakeMyNews</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Make My news</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-<%= yield %>
+    <div class="container_12">
+      <div class="logo"><img src="/assets/web/logo.jpg" width="277" height="126" /></div>
+      <div id="navigation">
 
-</body>
+        <ul><li><a href="index.html" class="active">Home</a></li>
+          <a href="abt_us.html">Portfolio</a>
+          <a href="contact_us.html">Contact</a></ul>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="photoSet clearfix">
+        <div class="introPhotoBlock">
+          <img alt="" src="/assets/web/Header_1.jpg" width="236" height="205">
+        </div>
+
+        <div class="introPhotoBlock">
+          <img alt="" src="/assets/web/Header_2.jpg" width="236" height="205">
+        </div>
+        <div class="introPhotoBlock">
+          <img alt="" src="/assets/web/header_3.jpg" width="236" height="206">
+        </div>
+        <div class="introPhotoBlock">
+          <img alt="" src="/assets/web/header_4.jpg" width="235" height="205" />
+        </div>
+        <div class="introPhotoBlock">
+          <img alt="" src="/assets/web/Header_5.jpg" width="236" height="185" />
+        </div>
+        <div class="introPhotoBlock">
+          <img alt="" src="/assets/web/Header_6.jpg" width="236" height="185" />
+        </div>
+        <div class="introPhotoBlock">
+          <img alt="" src="/assets/web/Header_7.jpg" width="237" height="185" />
+        </div>
+        <div class="introPhotoBlock">
+          <img alt="" src="/assets/web/Header_8.jpg" width="235" height="185" />
+        </div>
+
+
+
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="background-image:url(/assets/web/line.jpg); background-repeat:repeat-x; height:1px; width:943px;"></div>
+      <div class="middle-container">
+        <div class="left_box">
+          <h2>News Link</h2>
+          <ul class="aro">
+            <li>News Link One</li>
+            <li>News Link two</li>
+            <li>News Link Three</li>
+          </ul>
+
+        </div>
+        <div class="left_box">
+          <h2>Top Ten News</h2>
+          <ul class="aro">
+            <li>News will come here</li>
+            <li>News will come here</li>
+            <li>News will come here</li>
+          </ul>
+
+        </div>
+
+        <div class="left_box_2">
+          <%= render :partial => "/sessions/manager" %>
+        </div>
+
+        <div style="clear:both;"></div>
+
+        <div style="background-image:url(/assets/web/line.jpg); background-repeat:repeat-x; height:1px; width:943px; margin-top:20px;"></div>
+
+
+        <div class="sign-up" id="sign-up" style="display:none;">
+          <%=render :partial => "/sessions/sign_up"%>
+        </div>
+
+
+        <div class="left_box_3">
+          <h1></h1>
+
+        </div>
+
+      </div>
+      <div style="clear:both;"></div>
+
+
+
+    </div>
+
+    <div class="footer">
+      <div class="addthis_toolbox addthis_default_style ">
+        <a class="addthis_button_preferred_1"></a>
+        <a class="addthis_button_preferred_2"></a>
+        <a class="addthis_button_preferred_3"></a>
+        <a class="addthis_button_preferred_4"></a>
+        <a class="addthis_button_compact"></a>
+        <a class="addthis_counter addthis_bubble_style"></a>
+      </div>
+
+      <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f9ee5e830d5d31d"></script>
+      <!-- AddThis Button END -->
+
+      <div style="float:left;">© Copyright 2012 - make My News. All Rights are Reserved.</div>
+
+      <div style="float:right;">Designed and developed by <a href="http://agileconsultancyservices.com/">ABS</a></div>
+
+    </div>
+    <!--
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32365760-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    -->
+    <!-- Place this tag where you want the +1 button to render -->
+    <!--
+    <g:plusone annotation="inline"></g:plusone>
+    -->
+    <!-- Place this render call where appropriate -->
+    <!--
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    -->
+
+    <%= yield %>
+
+  </body>
 </html>

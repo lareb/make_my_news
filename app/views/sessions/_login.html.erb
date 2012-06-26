@@ -1,0 +1,19 @@
+
+<%= form_for("user", :url => user_session_path, :html => {:id => "sign_in"}) do |f| %>
+  <h2>Create News</h2>
+  <div class="input_left">Username:</div>
+  <div class="input_right">
+    <%= f.email_field :email%>
+  </div>
+
+  <div style="clear:both; margin-bottom:10px;"></div>
+
+  <div class="input_left">Password:</div>
+  <div class="input_right">
+    <%= f.password_field :password%>
+  </div>
+
+  <div style="clear:both; margin-bottom:10px;"></div>
+  <input name="button" type="image" src="/assets/web/submit.jpg" class="buttons"/>
+  <%= link_to "Register With Us", "#sign-up", :onclick => "return toggleSignup();", :class => "links" %>
+<%end%>
