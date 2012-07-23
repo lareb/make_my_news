@@ -93,7 +93,7 @@ h2{
 
 #navigation {
     float:right;
-    margin-top:74px;
+    margin-top:44px; /*74px;*/
     margin-right:17px;
     font-family:'Helvetica',sans-serif;
 }
@@ -231,4 +231,43 @@ input[type='email'], input[type='text'], input[type='password'], textarea {
     font-size: 14px;
     margin: 8px 0 0 20px;
     text-decoration: none;
+}
+
+.alert{
+    float: left;
+    font-family: arial;
+    font-size: 16px;
+    margin-top: 70px;
+    text-align: center;
+    width: 450px;
+}
+
+.alert-success{
+    color: red
+}
+
+.alert-danger{
+    color:green;
+}
+
+.session-secion, .session-secion a{
+    font-size: 11px !important;
+    height: 30px;
+    text-align: right;
+}
+
+.clear-both{
+    clear:both;
+    margin-bottom:10px;
+}
+
+.forms input, .forms textarea{
+    width:750px;
+    line-height:15px;
+}
+
+.select{
+    font-size: 16px;
+    height: 30px;
+    width: 150px;
 }

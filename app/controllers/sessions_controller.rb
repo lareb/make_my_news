@@ -4,13 +4,16 @@ class SessionsController < Devise::SessionsController
     resource = warden.authenticate!(:scope => resource_name, :recall => "#{controller_path}#failure")
     sign_in(resource_name, resource)
     #news#new
-    redirect_to new_news_path
+    #redirect_to new_news_path
+    flash[:notice] = "Sign in successfully"
+    redirect_to "/"
     #return render :json => {:success => true, :content => render_to_string(:layout => false, :partial => 'sessions/manager')}
   end
 
   def failure
     #return render:json => {:success => false, :errors => ["Login failed."]}
     @errors = "" #intigrate flash messages here
+    flash[:alert] = "Oopss!! womething wrong.."
     redirect_to "/"
   end
 
@@ -29,6 +32,7 @@ class SessionsController < Devise::SessionsController
 
     # We actually need to hardcode this as Rails default responder doesn't
     # support returning empty response on GET request
+    flash[:alert] = "Sign out successfully"
     respond_to do |format|
       format.any(*navigational_formats) { redirect_to redirect_path }
       format.all do

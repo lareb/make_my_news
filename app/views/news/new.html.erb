@@ -1,0 +1,59 @@
+<div style="background-image:url(/assets/web/line.jpg); background-repeat:repeat-x; height:1px; width:943px;"></div>
+<div class="middle-container">
+  <div class="left_box_4">
+    <br/>
+    <h2><b>Publish News</b></h2>
+
+    <%= simple_form_for @news, :url => "/news", :html => {:class => "forms"}  do |f| %>
+      <error></error>
+
+      <div class="input_left_ex">Headline:</div>
+      <div class="input_right_ex">
+        <%= f.input :headline, :label => false%>
+      </div>
+      <div class="clear-both"></div>
+
+      <div class="input_left_ex">Category:</div>
+      <div class="input_right_ex">
+        <%= f.association :category, :label => false, :wrapper_html => {:class => "first"} %>
+      </div>
+      <div class="clear-both"></div>
+
+      <div class="input_left_ex">Summary:</div>
+      <div class="input_right_ex">
+        <%= f.input :summary, :label => false, :as => :text, :input_html => { :cols => 50, :rows => 8 }%>
+      </div>
+      <div class="clear-both"></div>
+
+      <div class="input_left_ex">Photo:</div>
+      <div class="input_right_ex">
+        <%= f.input :photo_id, :label => false, :as => :file %>
+      </div>
+      <div class="clear-both"></div>
+
+      <div class="input_left_ex">Embed video:</div>
+      <div class="input_right_ex">
+        <%= f.input :embedded_video, :label => false, :as => :text, :input_html => { :cols => 50, :rows => 5 }%>
+      </div>
+      <div class="clear-both"></div>
+
+      <div class="input_left_ex">Youtube URL:</div>
+      <div class="input_right_ex">
+        <%= f.input :youtube_url, :label => false, :input_html => {:style => "height:28px;"}%>
+      </div>
+      <div class="clear-both"></div>
+
+      <input type="image" style="height:29px; width:84px; border:none; margin-left:180px;" src="/assets/web/review.jpg" name="button"/>
+      &nbsp; &nbsp;
+      <input type="image" style="height:29px; width:84px; border:none; margin-left:10px;" src="/assets/web/publish.jpg" name="button"/>
+
+    <%end%>
+  </div>
+
+  <div class="left_box_2 h1"></div>
+  <div>
+    <div style="clear:both;"></div>
+     <div style="background-image:url(/assets/web/line.jpg); background-repeat:repeat-x; height:1px; width:943px; margin-top:20px;"></div>
+  </div>
+  <div style="clear:both;"></div>
+</div>

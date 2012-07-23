@@ -1,8 +1,19 @@
 class NewsController < ApplicationController
-  include News
+  include LiveNews
+  before_filter :authenticate_user!
 
   def new
-    render :text => "make a new news here"
+   @news = PublishNews.new
+  end
+
+  def create
+    respond_to do |format|
+      if PublishNews.create!(params[:publish_news])
+        format.html { redirect_to news_index_path(), notice: "Your News is created, we'll post your news once our admin verify content"  }
+      else
+        format.html { render action: "new", notice: 'Something went wrong.'  }
+      end
+    end
   end
 
   def index
@@ -14,7 +25,7 @@ class NewsController < ApplicationController
      ibn_image = "http://ibnlive.in.com.feedsportal.com/c/33219/fe.ed/ibnlive.in.com/ibnrss/top.xml"
      begin
        #@latest_blog_posts = RSS::Parser.parse(open(ibn_image).read, false).items #[0...5]
-       @latest_blog_posts = News.new(ibn_image)
+       @latest_blog_posts = LiveNews.new(ibn_image)
        #@latest_blog_posts = news.headlines #(ibn_image)
        puts "----------------------------------------#{@latest_blog_posts.inspect}"
      #rescue

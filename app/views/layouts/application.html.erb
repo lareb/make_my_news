@@ -12,11 +12,28 @@
     <div class="container_12">
 
       <div class="logo"><img src="/assets/web/logo.jpg" width="277" height="126" /></div>
-      <div id="navigation">
+      <% if flash[:notice] %>
+        <div class="alert alert-success"><%= notice %></div>
+      <% end %>
+      <% if flash[:alert] %>
+        <div class="alert alert-danger"><%= alert.html_safe %></div>
+      <% end %>
 
-        <ul><li><a href="index.html" class="active">Home</a></li>
-          <a href="abt_us.html">Portfolio</a>
-          <a href="contact_us.html">Contact</a></ul>
+      <div id="navigation">
+        <div class="session-secion">
+          <% if(signed_in?) %>
+            <%= render :partial => 'sessions/logout' %>
+          <%end%>
+        </div>
+        
+        <ul>
+          <li>
+            <%= link_to "Home", "/", :class => ("active" if params[:controller] == "home")%>
+            <%= link_to "Post News", new_news_path(), :class => ("active" if params[:controller] == "news")%>
+            <a href="abt_us.html">Portfolio</a>
+            <a href="contact_us.html">Contact</a>
+          </li>
+        </ul>
       </div>
 <div style="clear:both;"></div>
 

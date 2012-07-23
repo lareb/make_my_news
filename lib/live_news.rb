@@ -1,8 +1,8 @@
 require "rss"
 
-module News
+module LiveNews
 
-  class News
+  class LiveNews
 
     def initialize(path)
       news_parse = RSS::Parser.parse(open(path).read, false).items
