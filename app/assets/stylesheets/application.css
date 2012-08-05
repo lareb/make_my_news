@@ -136,6 +136,7 @@ h2{
 
 .middle-container{
     margin-bottom:20px;
+    min-height: 450px;
 }
 
 .left_box{
@@ -167,10 +168,14 @@ ul{
 ul.aro{
     list-style-image:url(/assets/web/aro.jpg);
     color:#FFFFFF;
-    font-size:12px;
+    font-size:16px;
     margin-left:30px;
 }
 
+ul.aro a{
+    text-decoration: none;
+    color: #fff;
+}
 
 input[type='email'], input[type='text'], input[type='password'], textarea {
     border-style: solid;
@@ -239,15 +244,15 @@ input[type='email'], input[type='text'], input[type='password'], textarea {
     font-size: 16px;
     margin-top: 70px;
     text-align: center;
-    width: 450px;
+    width: 300px;
 }
 
 .alert-success{
-    color: red
+    color: green
 }
 
 .alert-danger{
-    color:green;
+    color:red;
 }
 
 .session-secion, .session-secion a{

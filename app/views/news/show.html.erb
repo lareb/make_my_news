@@ -1,0 +1,25 @@
+<div style="background-image:url(/assets/web/line.jpg); background-repeat:repeat-x; height:1px; width:943px;"></div>
+<div class="middle-container">
+
+	 <br />
+	  <h2>View Detail News</h2>
+	    <h3><%=@news.headline%></h3><br />
+            <%=@news.summary %>
+	    <!-- <img alt="" src="images/like.jpg"/> -->
+	    <br />
+
+          <% if(!signed_in?) %>
+	  <div class="left_box_2 h1">
+            <%= render :partial => 'sessions/login' %>
+	  </div>
+          <%end%>
+	   <!--
+           <div style="clear:both; margin-bottom:10px;"></div>
+	   <div class="input_left">Comment:</div> <div class="input_right"><input name="" type="textarea" style="width:850px; line-height:40px" /></div>
+	   <div style="clear:both; margin-bottom:10px;"></div>
+	   <input name="button" type="image" src="images/post.jpg" style="height:29px; width:84px; border:none; margin-left:102px;"/>
+           -->
+
+</div>
+<div style="background-image:url(/assets/web/line.jpg); background-repeat:repeat-x; height:1px; width:943px; padding-bottom:20px;"></div>
+

@@ -54,7 +54,9 @@
         </div>
 
         <div class="left_box_2">
-          <%= render :partial => "/sessions/manager" %>
+          <% if(!signed_in?) %>
+            <%= render :partial => 'sessions/login' %>
+          <%end%>
         </div>
 
         <div style="clear:both;"></div>

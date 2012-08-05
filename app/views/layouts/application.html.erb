@@ -29,8 +29,9 @@
         <ul>
           <li>
             <%= link_to "Home", "/", :class => ("active" if params[:controller] == "home")%>
-            <%= link_to "Post News", new_news_path(), :class => ("active" if params[:controller] == "news")%>
-            <a href="abt_us.html">Portfolio</a>
+            <%= link_to "Post News", (signed_in? ? new_news_path() : "#sign_in"), :class => ("active" if params[:controller] == "news")%>
+            <%= link_to "News", news_index_path(), :class => ("active" if params[:controller] == "news") %>
+            <!--<a href="abt_us.html">Portfolio</a>-->
             <a href="contact_us.html">Contact</a>
           </li>
         </ul>

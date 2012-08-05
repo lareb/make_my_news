@@ -1,12 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/Users/lareb/workspace/make_my_news/app/controllers/home_controller.rb</file>
-        <file>file:/Users/lareb/workspace/make_my_news/app/controllers/news_controller.rb</file>
-        <file>file:/Users/lareb/workspace/make_my_news/app/views/news/index.html.erb</file>
-        <file>file:/Users/lareb/workspace/make_my_news/public/demo.xml</file>
-        <file>file:/Users/lareb/workspace/make_my_news/lib/news.rb</file>
-        <file>file:/Users/lareb/workspace/make_my_news/config/application.rb</file>
-    </open-files>
 </project-private>

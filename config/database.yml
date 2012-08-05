@@ -12,10 +12,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: make_my_news_development
+  database: makemy_development
   pool: 5
-  username: root
-  password:
+  username: makemy_admin
+  password: makemynews_qwe_bnm
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -35,8 +35,8 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: make_my_news_production
+  database: makemy_development
   pool: 5
-  username: root
-  password:
+  username: makemy_admin
+  password: makemynews_qwe_bnm
   socket: /tmp/mysql.sock
