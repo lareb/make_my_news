@@ -7,8 +7,8 @@ set :user, "makemy"
 set :password, "vhw40bmr"
 set :domain, "makemynews.in"
 set :mount_path, "/"
-set :application, "make_my_new_cap_4"
-
+set :application, "make_my_new_cap_6"
+set :rails_env, 'development'
 set :repository, "/Users/lareb/workspace/make_my_news"
 set :local_repository, "/Users/lareb/workspace/make_my_news"
 set :scm, :git
