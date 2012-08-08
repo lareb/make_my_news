@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/Users/lareb/workspace/make_my_news/app/controllers/news_controller.rb</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/models/publish_news.rb</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/views/news/index.html.erb</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/views/news/new.html.erb</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/views/layouts/application.html.erb</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/views/sessions/_manager.html.erb</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/assets/stylesheets/application.css</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/views/news/show.html.erb</file>
+        <file>file:/Users/lareb/workspace/make_my_news/Gemfile</file>
+        <file>file:/Users/lareb/workspace/make_my_news/config/deploy.rb</file>
+        <file>file:/Users/lareb/workspace/make_my_news/config/database.yml</file>
+        <file>file:/Users/lareb/workspace/make_my_news/public/500.html</file>
+    </open-files>
 </project-private>
