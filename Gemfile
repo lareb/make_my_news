@@ -22,8 +22,8 @@ end
 
 gem 'simple_form'
 gem 'jquery-rails'
-gem 'capistrano'
-gem 'capistrano-vexxhost'
+#gem 'capistrano'
+#gem 'capistrano-vexxhost'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
