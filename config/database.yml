@@ -16,7 +16,7 @@ development:
   pool: 5
   username: makemy_admin
   password: makemynews_qwe_bnm
-  host: 127.0.0.1
+  host: localhost
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -40,5 +40,5 @@ production:
   pool: 5
   username: makemy_admin
   password: makemynews_qwe_bnm
-  host: 127.0.0.1
+  host: localhost
   socket: /tmp/mysql.sock

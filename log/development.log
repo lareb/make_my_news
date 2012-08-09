@@ -1,2 +1,3 @@
 sdffsf
 sfdsfsf
+failed: "sh -c 'cd /home/makemy/apps/make_my_new_cap_7/releases/20120808110433 && bundle install --gemfile /home/makemy/apps/make_my_new_cap_7/releases/20120808110433/Gemfile --path /home/makemy/apps/make_my_new_cap_7/shared/bundle --deployment --quiet --without development test'" on makemynews.in
