@@ -22,8 +22,8 @@ end
 
 gem 'simple_form'
 gem 'jquery-rails'
-gem "sqlite3", :groups => [:development, :test]
-gem "pg", :groups => [:production]
+#gem "sqlite3", :groups => [:development, :test]
+gem "pg"
 gem "activerecord-postgresql-adapter"
 #gem 'capistrano'
 #gem 'capistrano-vexxhost'
