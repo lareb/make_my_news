@@ -8,19 +8,18 @@
 
 <style type="text/css">
 body {
-    background: url(<%= image_path('http://i577.photobucket.com/albums/ss217/Jaceslover17/stock-vector-modern-sexy-repeat-wallpaper-background-image-in-black-and-white-15990283.jpg') %>) top repeat-x #cfcfcf;
+    background: url(<%= image_path('http://makemynews.herokuapp.com/assets/web/bg.jpg') %>) top repeat-x #000;
+    color:black;
 }
 </style>
 
 
-<div style="color:#fff;font-family: gudea">
+<div style="background-color:#5AC ;color:#000;font-family:gudea;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;height: 400px;width: 400px;padding: 10px;">
     <h1>Welcome to Make My NEWS <%= @user_name %>
     </h1>
+
     <p>
-      <%=Time.now%><br/>
-    </p>
-    <p>
-      To login to the site, just follow this link: <a href="http://fierce-sunset-8159.herokuapp.com">Click here</a>.
+      To login to the site, just follow this link: <a href="http://makemynews.herokuapp.com/">Click here</a>.
     </p>
     <p>Thanks for joining and have a great day!</p>
 </div>

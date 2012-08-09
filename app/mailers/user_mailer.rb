@@ -1,5 +1,5 @@
 class UserMailer < Devise::Mailer
-  default :from => "support@makemynews.com"
+  default :from => "info@makemynews.com"
 
   def welcome_email(user)
     @user = user

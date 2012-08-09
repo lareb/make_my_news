@@ -1,3 +1,598 @@
 sdffsf
 sfdsfsf
-failed: "sh -c 'cd /home/makemy/apps/make_my_new_cap_7/releases/20120808110433 && bundle install --gemfile /home/makemy/apps/make_my_new_cap_7/releases/20120808110433/Gemfile --path /home/makemy/apps/make_my_new_cap_7/shared/bundle --deployment --quiet --without development test'" on makemynews.in
+failed: "sh -c 'cd /home/makemy/apps/make_my_new_cap_7/releases/20120808110433 && bundle install --gemfile /home/makemy/apps/make_my_new_cap_7/releases/20120808110433/Gemfile --path /home/makemy/apps/make_my_new_cap_7/shared/bundle --deployment --quiet --without development test'" on makemynews.in  Rendered user_mailer/welcome_email.html.erb (11.2ms)
+
+Sent mail to lareb.nawab@anchanto.com (165ms)
+Date: Thu, 09 Aug 2012 23:24:37 +0530
+From: support@makemynews.com
+To: lareb.nawab@anchanto.com
+Message-ID: <5023f95d9741d_36d3fda19434ecc1cb@Enchantos-MacBook-Pro.local.mail>
+Subject: Welcome to Make My NEWS
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+
+<style type="text/css">
+body {
+    background: url(http://i577.photobucket.com/albums/ss217/Jaceslover17/stock-vector-modern-sexy-repeat-wallpaper-background-image-in-black-and-white-15990283.jpg) top repeat-x #cfcfcf;
+}
+</style>
+
+
+<div style="color:#fff;font-family: gudea">
+    <h1>Welcome to Make My NEWS 
+    </h1>
+    <p>
+      2012-08-09 23:24:37 +0530<br/>
+    </p>
+    <p>
+      To login to the site, just follow this link: <a href="http://fierce-sunset-8159.herokuapp.com">Click here</a>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+</div>
+  </body>
+</html>
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-09 23:27:56 +0530
+Processing by HomeController#index as HTML
+  Rendered sessions/_login.html.erb (1.6ms)
+  Rendered sessions/_sign_up.html.erb (27.5ms)
+  Rendered home/index.html.erb within layouts/application (99.7ms)
+Completed 200 OK in 347ms (Views: 346.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /application.css - 200 OK (10ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /news.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /registrations.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /news.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /registrations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/web/logo.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/logo.jpg - 304 Not Modified (96ms)
+
+
+Started GET "/assets/web/Header_1.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/Header_1.jpg - 304 Not Modified (35ms)
+
+
+Started GET "/assets/web/Header_2.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/Header_2.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/web/header_3.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/header_3.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/web/header_4.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/header_4.jpg - 304 Not Modified (13ms)
+
+
+Started GET "/assets/web/Header_5.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/Header_5.jpg - 304 Not Modified (47ms)
+
+
+Started GET "/assets/web/Header_6.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/Header_6.jpg - 304 Not Modified (37ms)
+
+
+Started GET "/assets/web/Header_7.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/Header_7.jpg - 304 Not Modified (14ms)
+
+
+Started GET "/assets/web/Header_8.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/Header_8.jpg - 304 Not Modified (8ms)
+
+
+Started GET "/assets/web/bg.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/bg.jpg - 304 Not Modified (50ms)
+
+
+Started GET "/assets/web/submit.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/submit.jpg - 304 Not Modified (59ms)
+
+
+Started GET "/assets/web/aro.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/aro.jpg - 304 Not Modified (39ms)
+
+
+Started GET "/assets/web/line.jpg" for 127.0.0.1 at 2012-08-09 23:27:57 +0530
+Served asset /web/line.jpg - 304 Not Modified (19ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-08-09 23:29:21 +0530
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VqYlfIibQ3eRV9x9yWNWyOGFp87SMZLLPyL7fFb/SJI=", "user"=>{"first_name"=>"lareb", "last_name"=>"nawab", "email"=>"lareb.indore@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "phone"=>"8398973748", "address_line_1"=>"2 skjd alsf s", "address_line_2"=>"ujjain road dewas", "city"=>"Mumbai", "state"=>"Mahrashtra"}, "button.x"=>"23", "button.y"=>"17"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'lareb.indore@gmail.com' LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `users` (`address_line_1`, `address_line_2`, `city`, `country`, `created_at`, `current_sign_in_at`, `current_sign_in_ip`, `email`, `encrypted_password`, `first_name`, `last_name`, `last_sign_in_at`, `last_sign_in_ip`, `phone`, `remember_created_at`, `reset_password_sent_at`, `reset_password_token`, `sign_in_count`, `state`, `updated_at`) VALUES ('2 skjd alsf s', 'ujjain road dewas', 'Mumbai', NULL, '2012-08-09 17:59:22', NULL, NULL, 'lareb.indore@gmail.com', '$2a$10$pdJPCHV4gbTiU4MaaOUT2uVa90PFBZmqJxk/lMzTd0gtR0d8vEkn2', 'lareb', 'nawab', NULL, NULL, '8398973748', NULL, NULL, NULL, 0, 'Mahrashtra', '2012-08-09 17:59:22')[0m
+  [1m[35m (19.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2012-08-09 17:59:22', `current_sign_in_at` = '2012-08-09 17:59:22', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2012-08-09 17:59:22' WHERE `users`.`id` = 3
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  Rendered user_mailer/welcome_email.html.erb (52.7ms)
+
+Sent mail to lareb.indore@gmail.com (409ms)
+Date: Thu, 09 Aug 2012 23:29:22 +0530
+From: support@makemynews.com
+To: lareb.indore@gmail.com
+Message-ID: <5023fa7a75988_39c3ff39851392c63019@Enchantos-MacBook-Pro.local.mail>
+Subject: Welcome to Make My NEWS
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+
+<style type="text/css">
+body {
+    background: url(http://i577.photobucket.com/albums/ss217/Jaceslover17/stock-vector-modern-sexy-repeat-wallpaper-background-image-in-black-and-white-15990283.jpg) top repeat-x #cfcfcf;
+}
+</style>
+
+
+<div style="color:#fff;font-family: gudea">
+    <h1>Welcome to Make My NEWS 
+    </h1>
+    <p>
+      2012-08-09 23:29:22 +0530<br/>
+    </p>
+    <p>
+      To login to the site, just follow this link: <a href="http://fierce-sunset-8159.herokuapp.com">Click here</a>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+</div>
+  </body>
+</html>
+Redirected to http://localhost:3000/
+Completed 302 Found in 1308ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1
+  Rendered sessions/_sign_up.html.erb (2.5ms)
+  Rendered home/index.html.erb within layouts/application (29.9ms)
+  Rendered sessions/_logout.html.erb (0.9ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrations.css?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /registrations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.css?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /news.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/news.js?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /news.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /registrations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/logo.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/logo.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/bg.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/bg.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/Header_1.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/Header_1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/Header_2.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/Header_2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/header_3.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/header_3.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/header_4.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/header_4.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/Header_5.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/Header_5.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/Header_6.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/Header_6.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/Header_7.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/Header_7.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/Header_8.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/Header_8.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/submit.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/submit.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/line.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/line.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/web/aro.jpg" for 127.0.0.1 at 2012-08-09 23:29:23 +0530
+Served asset /web/aro.jpg - 304 Not Modified (0ms)
+  Rendered user_mailer/welcome_email.html.erb (10.6ms)
+
+Sent mail to lareb.indore@gmail.com (433ms)
+Date: Thu, 09 Aug 2012 23:31:36 +0530
+From: support@makemynews.com
+To: lareb.indore@gmail.com
+Message-ID: <5023fb0063752_3a53fdde8434ecc50820@Enchantos-MacBook-Pro.local.mail>
+Subject: Welcome to Make My NEWS
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+
+<style type="text/css">
+body {
+    background: url(http://i577.photobucket.com/albums/ss217/Jaceslover17/stock-vector-modern-sexy-repeat-wallpaper-background-image-in-black-and-white-15990283.jpg) top repeat-x #cfcfcf;
+}
+</style>
+
+
+<div style="color:#fff;font-family: gudea">
+    <h1>Welcome to Make My NEWS 
+    </h1>
+    <p>
+      2012-08-09 23:31:36 +0530<br/>
+    </p>
+    <p>
+      To login to the site, just follow this link: <a href="http://fierce-sunset-8159.herokuapp.com">Click here</a>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+</div>
+  </body>
+</html>
+  Rendered user_mailer/welcome_email.html.erb (10.4ms)
+
+Sent mail to lareb.indore@gmail.com (7371ms)
+Date: Thu, 09 Aug 2012 23:33:52 +0530
+From: info@makemynews.com
+To: lareb.indore@gmail.com
+Message-ID: <5023fb888b2d2_3a63fe675834ec4175c1@Enchantos-MacBook-Pro.local.mail>
+Subject: Welcome to Make My NEWS
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+
+<style type="text/css">
+body {
+    background: url(http://i577.photobucket.com/albums/ss217/Jaceslover17/stock-vector-modern-sexy-repeat-wallpaper-background-image-in-black-and-white-15990283.jpg) top repeat-x #cfcfcf;
+}
+</style>
+
+
+<div style="color:#fff;font-family: gudea">
+    <h1>Welcome to Make My NEWS 
+    </h1>
+    <p>
+      2012-08-09 23:33:52 +0530<br/>
+    </p>
+    <p>
+      To login to the site, just follow this link: <a href="http://fierce-sunset-8159.herokuapp.com">Click here</a>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+</div>
+  </body>
+</html>
+  Rendered user_mailer/welcome_email.html.erb (10.4ms)
+
+Sent mail to lareb.indore@gmail.com (7251ms)
+Date: Thu, 09 Aug 2012 23:37:12 +0530
+From: info@makemynews.com
+To: lareb.indore@gmail.com
+Message-ID: <5023fc50138ea_3a83fca68434ec41464@Enchantos-MacBook-Pro.local.mail>
+Subject: Welcome to Make My NEWS
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+
+<style type="text/css">
+body {
+    background: url(http://makemynews.herokuapp.com/assets/web/bg.jpg) top repeat-x #cfcfcf;
+    color:black;
+}
+</style>
+
+
+<div style="color:#fff;font-family: gudea">
+    <h1>Welcome to Make My NEWS 
+    </h1>
+
+    <p>
+      To login to the site, just follow this link: <a href="http://makemynews.herokuapp.com/">Click here</a>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+</div>
+  </body>
+</html>
+  Rendered user_mailer/welcome_email.html.erb (10.4ms)
+
+Sent mail to lareb.indore@gmail.com (7551ms)
+Date: Thu, 09 Aug 2012 23:44:46 +0530
+From: info@makemynews.com
+To: lareb.indore@gmail.com
+Message-ID: <5023fe16b58ec_4043ffa6c834ec8930fb@Enchantos-MacBook-Pro.local.mail>
+Subject: Welcome to Make My NEWS
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+
+<style type="text/css">
+body {
+    background: url(http://makemynews.herokuapp.com/assets/web/bg.jpg) top repeat-x #000;
+    color:black;
+}
+</style>
+
+
+<div style="color:#000;font-family:gudea;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;height: 400px;width: 400px;">
+    <h1>Welcome to Make My NEWS 
+    </h1>
+
+    <p>
+      To login to the site, just follow this link: <a href="http://makemynews.herokuapp.com/">Click here</a>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+</div>
+  </body>
+</html>
+  Rendered user_mailer/welcome_email.html.erb (10.5ms)
+
+Sent mail to lareb.indore@gmail.com (7587ms)
+Date: Thu, 09 Aug 2012 23:46:03 +0530
+From: info@makemynews.com
+To: lareb.indore@gmail.com
+Message-ID: <5023fe634ac60_4073fe515834ed051514@Enchantos-MacBook-Pro.local.mail>
+Subject: Welcome to Make My NEWS
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+
+<style type="text/css">
+body {
+    background: url(http://makemynews.herokuapp.com/assets/web/bg.jpg) top repeat-x #000;
+    color:black;
+}
+</style>
+
+
+<div style="background-color:#5AC ;color:#000;font-family:gudea;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;height: 400px;width: 400px;">
+    <h1>Welcome to Make My NEWS 
+    </h1>
+
+    <p>
+      To login to the site, just follow this link: <a href="http://makemynews.herokuapp.com/">Click here</a>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+</div>
+  </body>
+</html>
+  Rendered user_mailer/welcome_email.html.erb (0.6ms)
+
+Sent mail to lareb.indore@gmail.com (7788ms)
+Date: Thu, 09 Aug 2012 23:47:19 +0530
+From: info@makemynews.com
+To: lareb.indore@gmail.com
+Message-ID: <5023feaf923f_4073fe515834ed051647@Enchantos-MacBook-Pro.local.mail>
+Subject: Welcome to Make My NEWS
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+
+<style type="text/css">
+body {
+    background: url(http://makemynews.herokuapp.com/assets/web/bg.jpg) top repeat-x #000;
+    color:black;
+}
+</style>
+
+
+<div style="background-color:#5AC ;color:#000;font-family:gudea;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;height: 400px;width: 400px;padding: 10px;">
+    <h1>Welcome to Make My NEWS 
+    </h1>
+
+    <p>
+      To login to the site, just follow this link: <a href="http://makemynews.herokuapp.com/">Click here</a>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+</div>
+  </body>
+</html>
+  Rendered user_mailer/welcome_email.html.erb (10.7ms)
+  Rendered user_mailer/welcome_email.html.erb (0.1ms)
+
+Sent mail to lareb.indore@gmail.com (10516ms)
+Date: Thu, 09 Aug 2012 23:48:28 +0530
+From: info@makemynews.com
+To: lareb.indore@gmail.com
+Message-ID: <5023fef4b3d9e_40a3fca64434ec834730@Enchantos-MacBook-Pro.local.mail>
+Subject: Welcome to Make My NEWS
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea"/>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+
+<style type="text/css">
+body {
+    background: url(http://makemynews.herokuapp.com/assets/web/bg.jpg) top repeat-x #000;
+    color:black;
+}
+</style>
+
+
+<div style="background-color:#5AC ;color:#000;font-family:gudea;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;height: 400px;width: 400px;padding: 10px;">
+    <h1>Welcome to Make My NEWS 
+    </h1>
+
+    <p>
+      To login to the site, just follow this link: <a href="http://makemynews.herokuapp.com/">Click here</a>.
+    </p>
+    <p>Thanks for joining and have a great day!</p>
+</div>
+  </body>
+</html>
