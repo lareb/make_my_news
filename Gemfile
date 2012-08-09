@@ -22,6 +22,7 @@ end
 
 gem 'simple_form'
 gem 'jquery-rails'
+gem "activerecord-postgresql-adapter"
 #gem 'capistrano'
 #gem 'capistrano-vexxhost'
 
