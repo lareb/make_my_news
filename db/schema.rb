@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120723122811) do
+ActiveRecord::Schema.define(:version => 20120825071646) do
 
   create_table "categories", :force => true do |t|
     t.string   "name",          :null => false
@@ -42,6 +42,13 @@ ActiveRecord::Schema.define(:version => 20120723122811) do
     t.boolean  "is_live"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "user_like_news", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "publish_news_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "users", :force => true do |t|

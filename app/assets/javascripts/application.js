@@ -17,3 +17,19 @@
 function toggleSignup(){
     $("#sign-up").slideToggle("100");
 }
+
+function likeNews(path, obj){
+  alert(path);
+  $.ajax({
+    type:'GET',
+    url: path ,
+    success:function (resp) {
+      alert(resp);
+      if(resp == "true"){
+        $(obj).parent().html("Thank you for like this News.");
+        return false;
+      }
+    }
+  });
+  return false;
+}

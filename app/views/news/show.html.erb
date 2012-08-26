@@ -2,18 +2,28 @@
 <div class="middle-container">
 
 	 <br />
-	  <h2>View Detail News</h2>
-	    <h3><%=@news.headline%></h3><br />
+	    <h2><%=@news.headline%></h2><br />
             <%=@news.summary %>
 	    <!-- <img alt="" src="images/like.jpg"/> -->
 	    <br />
 
-          <% if(!signed_in?) %>
-	  <div class="left_box_2 h1">
-            <%= render :partial => 'sessions/login' %>
-	  </div>
-          <%end%>
-	   <!--
+            
+            <% if(!signed_in?) %>
+              <div class="left_box_2 h1" id="sign_in_box" style="display:none;">
+                <%= render :partial => 'sessions/login' %>
+              </div>
+              <div class="right_box_2">
+                <%= link_to "Like", "#", :onclick => "$('#sign_in_box').show();$('#user_email').focus();return false;"%>
+              </div>
+            <%else%>
+              <%if not_like_yet?(@news)%>
+                <div class="right_box_2">
+                  <%= link_to "Like", "#", :onclick => "return likeNews('#{like_news_path(@news)}', this);"%>
+                </div>
+              <%end%>
+            <%end%>
+
+           <!--
            <div style="clear:both; margin-bottom:10px;"></div>
 	   <div class="input_left">Comment:</div> <div class="input_right"><input name="" type="textarea" style="width:850px; line-height:40px" /></div>
 	   <div style="clear:both; margin-bottom:10px;"></div>

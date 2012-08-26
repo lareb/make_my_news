@@ -1,8 +1,14 @@
 MakeMyNews::Application.routes.draw do
   devise_for :users, :controllers => {:sessions => 'sessions', :registrations => "registrations"}
 
-  resources :news
+  resources :news do
+    member do
+      get :like
+    end
+    #resources :user_like_news, :path => "like" do
 
+    #end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

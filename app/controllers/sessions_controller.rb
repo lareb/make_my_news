@@ -6,14 +6,14 @@ class SessionsController < Devise::SessionsController
     #news#new
     #redirect_to new_news_path
     flash[:notice] = "Sign in successfully"
-    redirect_to "/"
+    redirect_to (params[:path].blank? ? "/" : params[:path])
     #return render :json => {:success => true, :content => render_to_string(:layout => false, :partial => 'sessions/manager')}
   end
 
   def failure
     #return render:json => {:success => false, :errors => ["Login failed."]}
     @errors = "" #intigrate flash messages here
-    flash[:alert] = "Oopss!! womething wrong.."
+    flash[:alert] = "Oopss!! something wrong.."
     redirect_to "/"
   end
 

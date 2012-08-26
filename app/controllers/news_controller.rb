@@ -44,6 +44,20 @@ class NewsController < ApplicationController
     return RSS::Parser.parse(open(ibn_image).read, false).items
   end
 
+  #like a news
+  def like
+    news_id = PublishNews.find_by_id(params[:id].to_i)
+    #check if user s logged in or a news id is a valid news
+    if(!signed_in? || news_id.nil?)
+      render :text => false
+      return
+    end
+    if UserLikeNews.where(:user_id => current_user.id, :publish_news_id => news_id.id).empty?
+      UserLikeNews.create!(:user_id => current_user.id, :publish_news_id => news_id.id)
+    end
+    render :text => true
+    return
+  end
 
 end
 =begin
