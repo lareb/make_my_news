@@ -5,7 +5,7 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+#gem 'mysql2'
 gem 'devise'
 
 # Gems used only for assets and not required
@@ -25,7 +25,7 @@ gem 'jquery-rails'
 gem "paperclip", "~> 2.7"
 #gem 'unicorn'
 
-gem "sqlite3", :groups => [:development, :test]
+#gem "sqlite3", :groups => [:development, :test]
 gem "pg"
 gem "activerecord-postgresql-adapter"
 #gem 'capistrano'
