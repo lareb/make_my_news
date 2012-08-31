@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120825071646) do
+ActiveRecord::Schema.define(:version => 20120826151420) do
 
   create_table "categories", :force => true do |t|
     t.string   "name",          :null => false
@@ -20,28 +20,19 @@ ActiveRecord::Schema.define(:version => 20120825071646) do
     t.datetime "updated_at",    :null => false
   end
 
-  create_table "news", :force => true do |t|
-    t.string   "headline",       :null => false
-    t.integer  "category_id"
-    t.text     "summary",        :null => false
-    t.integer  "photo_id"
-    t.text     "embedded_video"
-    t.string   "youtube_url"
-    t.boolean  "is_live"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
   create_table "publish_news", :force => true do |t|
-    t.string   "headline",       :null => false
+    t.string   "headline",              :null => false
     t.integer  "category_id"
-    t.text     "summary",        :null => false
-    t.integer  "photo_id"
+    t.text     "summary",               :null => false
     t.text     "embedded_video"
     t.string   "youtube_url"
     t.boolean  "is_live"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+    t.string   "news_pic"
+    t.string   "news_pic_file_name"
+    t.string   "news_pic_content_type"
+    t.integer  "news_pic_file_size"
   end
 
   create_table "user_like_news", :force => true do |t|

@@ -281,8 +281,43 @@ input[type='email'], input[type='text'], input[type='password'], textarea {
     line-height:15px;
 }
 
+.radio_options input[type='radio'],
+.radio_options label
+{
+    float: left;
+    margin: 10px 0 10px 5px;
+    width: auto;
+}
+
+.radio_options label{
+    margin-right: 50px;
+}
+
 .select{
     font-size: 16px;
     height: 30px;
     width: 150px;
+}
+
+.news_pic{
+    border: 1px solid white;
+    float: left;
+    height: 400px;
+    margin: 0 10px 10px 0;
+    width: 400px;
+}
+
+.news_summary{
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 22px;
+    word-spacing: 2px;
+}
+
+/*---------YOUTUBE--------------*/
+div.lite {
+    position: relative; left: 0; top: 0
+}
+img.lite:hover {
+    background:url(http://lh5.googleusercontent.com/-oBFjswrosz4/TuHqainRc3I/AAAAAAAAAbE/t3rMQuSJdLA/s800/youtube-play-button-hover.png)
 }

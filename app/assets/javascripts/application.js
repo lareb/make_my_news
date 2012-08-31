@@ -19,14 +19,13 @@ function toggleSignup(){
 }
 
 function likeNews(path, obj){
-  alert(path);
   $.ajax({
     type:'GET',
     url: path ,
     success:function (resp) {
-      alert(resp);
       if(resp == "true"){
         $(obj).parent().html("Thank you for like this News.");
+        $(obj).parent().hide("slow");
         return false;
       }
     }

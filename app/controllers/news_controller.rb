@@ -7,6 +7,12 @@ class NewsController < ApplicationController
   end
 
   def create
+    unless(params[:publish_news][:youtube_url].blank?)
+      youtube_params = params[:publish_news][:youtube_url].split("?")[1]
+      youtube_params = CGI::parse(youtube_params)
+      params[:publish_news][:youtube_url] = youtube_params["v"][0]
+    end
+    puts "#{params[:publish_news][:youtube_url].inspect}-----------------------"
     respond_to do |format|
       if PublishNews.create!(params[:publish_news].merge!(:is_live => 1))
         format.html { redirect_to news_index_path(), notice: "Your News is created, we'll post your news once our admin verify content"  }

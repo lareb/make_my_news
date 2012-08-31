@@ -4,7 +4,7 @@
     <br/>
     <h2><b>Publish News</b></h2>
 
-    <%= simple_form_for @news, :url => "/news", :html => {:class => "forms"}  do |f| %>
+    <%= simple_form_for @news, :url => "/news", :html => {:class => "forms", :multipart => true }  do |f| %>
       <error></error>
 
       <div class="input_left_ex">Headline:</div>
@@ -25,23 +25,38 @@
       </div>
       <div class="clear-both"></div>
 
-      <div class="input_left_ex">Photo:</div>
-      <div class="input_right_ex">
-        <%= f.input :photo_id, :label => false, :as => :file %>
+      <div class="radio_options">
+        <input type="radio" name="mltimedia_content" checked="checked" class="select_photo mltimedia_content" id="select_photo"/><label for="select_photo" class="select_photo">I have Photo to upload</label>
+        <input type="radio" name="mltimedia_content" class="select_youtube mltimedia_content" id="select_youtube"/><label for="select_youtube" class="select_youtube">I have YouTube URL</label>
+        <input type="radio" name="mltimedia_content" class="select_embed_vedio mltimedia_content" id="select_embed_vedio"/><label for="select_embed_vedio" class="select_embed_vedio">I have embed Video</label>
+        
       </div>
       <div class="clear-both"></div>
 
-      <div class="input_left_ex">Embed video:</div>
-      <div class="input_right_ex">
-        <%= f.input :embedded_video, :label => false, :as => :text, :input_html => { :cols => 50, :rows => 5 }%>
+      <div class="multimedia_photo">
+        <div class="input_left_ex">Photo:</div>
+        <div class="input file">
+          <input type="file" name="publish_news[news_pic]" id="publish_news_news_pic" class="file" />
+        </div>
+        <div class="clear-both"></div>
       </div>
-      <div class="clear-both"></div>
 
-      <div class="input_left_ex">Youtube URL:</div>
-      <div class="input_right_ex">
-        <%= f.input :youtube_url, :label => false, :input_html => {:style => "height:28px;"}%>
+
+      <div class="multimedia_embedded_video" style="display:none">
+        <div class="input_left_ex">Embed video:</div>
+        <div class="input_right_ex">
+          <%= f.input :embedded_video, :label => false, :as => :text, :input_html => { :cols => 50, :rows => 5 }%>
+        </div>
+        <div class="clear-both"></div>
       </div>
-      <div class="clear-both"></div>
+
+      <div class="multimedia_youtube" style="display:none">
+        <div class="input_left_ex">Youtube URL:</div>
+        <div class="input_right_ex">
+          <%= f.input :youtube_url, :label => false, :input_html => {:style => "height:28px;"}%>
+        </div>
+        <div class="clear-both"></div>
+      </div>
 
       <input type="image" style="height:29px; width:84px; border:none; margin-left:180px;" src="/assets/web/review.jpg" name="button"/>
       &nbsp; &nbsp;
@@ -57,3 +72,21 @@
   </div>
   <div style="clear:both;"></div>
 </div>
+
+
+<script type="text/javascript">
+  $("input.mltimedia_content").click(function(){
+    $(".multimedia_photo").hide();
+    $(".multimedia_youtube").hide();
+    $(".multimedia_embedded_video").hide();
+    
+    if($(this).hasClass("select_photo")){
+      $(".multimedia_photo").show();
+    }else if($(this).hasClass("select_youtube")){
+      $(".multimedia_youtube").show();
+    }else{
+      $(".multimedia_embedded_video").show();
+    }
+    //return false;
+  })
+</script>
