@@ -22,7 +22,7 @@ end
 
 gem 'simple_form'
 gem 'jquery-rails'
-gem "paperclip", "~> 2.7"
+#gem "paperclip", "~> 2.7"
 #gem 'unicorn'
 
 #gem "sqlite3", :groups => [:development, :test]
