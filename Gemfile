@@ -25,7 +25,9 @@ gem 'jquery-rails'
 #gem "paperclip", "~> 2.7"
 #gem 'unicorn'
 
-#gem "sqlite3", :groups => [:development, :test]
+
+
+#gem "sqlite3", :groups => [:development, :test] #no need
 gem "pg"
 gem "activerecord-postgresql-adapter"
 #gem 'capistrano'
