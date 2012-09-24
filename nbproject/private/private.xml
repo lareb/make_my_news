@@ -9,6 +9,10 @@
         <file>file:/Users/lareb/workspace/make_my_news/app/assets/stylesheets/application.css</file>
         <file>file:/Users/lareb/workspace/make_my_news/app/models/publish_news.rb</file>
         <file>file:/Users/lareb/workspace/make_my_news/app/controllers/news_controller.rb</file>
-        <file>file:/Users/lareb/workspace/make_my_news/public/.htaccessBKP</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/assets/javascripts/lite-youtube-min.js</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/assets/javascripts/application.js</file>
+        <file>file:/Users/lareb/workspace/make_my_news/public/dispatch.fcgi</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/controllers/registrations_controller.rb</file>
+        <file>file:/Users/lareb/workspace/make_my_news/app/mailers/user_mailer.rb</file>
     </open-files>
 </project-private>
