@@ -13649,3 +13649,14 @@ Served asset /user_like_news.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-31 13:01:01 +0530
 Served asset /application.js - 304 Not Modified (1ms)
+  [1m[36m (2.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20120623053536)
+Migrating to UsersExtraFields (20120623053807)
+Migrating to CreateCategories (20120628102610)
+Migrating to CreatePublishNews (20120723122811)
+Migrating to CreateUserLikeNews (20120825071646)
+Migrating to ChangePhotoFieldInNews (20120826151420)
+Migrating to CreateFriendWishes (20120924061601)
+  [1m[35m (115.3ms)[0m  CREATE TABLE `friend_wishes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `full_name` varchar(255), `email` varchar(255), `message` text, `confirmation_passcode` varchar(255), `is_confirm` tinyint(1), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (11.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20120924061601')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
