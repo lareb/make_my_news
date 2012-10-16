@@ -5,7 +5,7 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'mysql2'
+gem 'mysql2'
 gem 'devise'
 
 # Gems used only for assets and not required
@@ -28,9 +28,9 @@ gem 'jquery-rails'
 
 
 #gem "sqlite3", :groups => [:development, :test] #no need
-gem "pg"
-gem "activerecord-postgresql-adapter"
-#gem 'capistrano'
+#gem "pg"
+#gem "activerecord-postgresql-adapter"
+gem 'capistrano'
 #gem 'capistrano-vexxhost'
 
 # To use ActiveModel has_secure_password
