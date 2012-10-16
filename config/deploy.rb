@@ -11,6 +11,7 @@ set :deploy_to, "/home/#{user}/#{application}"
 role :app, "makemynews.in"
 role :web, "makemynews.in"
 role :db, "makemynews.in", :primary => true
+default_run_options[:pty] = true
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
