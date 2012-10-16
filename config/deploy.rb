@@ -1,38 +1,28 @@
-require 'capistrano'
-require 'capistrano-vexxhost'
-require 'bundler/capistrano'
+set :application, "make_my_news"
+set :repository,  "git://github.com/lareb/make_my_news.git"
+set :user, "makemynews"
+set :password, "iBq83fzm"
 
-# Account Settings
-set :user, "makemy"
-set :password, "vhw40bmr"
-set :domain, "makemynews.in"
-role :app, 'makemynews.in'
-role :web, 'makemynews.in'
-set :mount_path, "/"
-set :application, "make_my_new_cap_10"
-set :rails_env, 'development'
-set :repository, "/Users/lareb/workspace/make_my_news"
-set :local_repository, "/Users/lareb/workspace/make_my_news"
 set :scm, :git
-set :repository, "git@github.com:lareb/make_my_news.git"
-set :deploy_via, :copy
-set :bundler_cmd, "bundle install --path /home/makemy/ruby/gems --deployment --without=development,test"
-default_run_options[:pty] = true
+# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-desc "Restart the app server"
-task :restart, :roles => :app do
-  #send(run_method, "")
-  send(run_method, "cd #{current_path} && mongrel_rails restart")
-end
+set :branch, "master"
+set :deploy_to, "/home/#{user}/#{application}"
+role :app, "makemynews.in"
+role :web, "makemynews.in"
+role :db, "makemynews.in", :primary => true
 
-desc "Stop the app server"
-task :stop_app, :roles => :app do
-  #send(run_method, "")
-  send(run_method, "cd #{current_path} && mongrel_rails stop")
-end
+# if you want to clean up old releases on each deploy uncomment this:
+# after "deploy:restart", "deploy:cleanup"
 
-desc "Start the app server"
-task :start_app, :roles => :app do
-  #send(run_method, "")
-  send(run_method, "cd #{current_path} && mongrel_rails start -d -p #{app_port} -e #{app_env} < /dev/null >& /dev/null")
-end
+# if you're still using the script/reaper helper you will need
+# these http://github.com/rails/irs_process_scripts
+
+# If you are using Passenger mod_rails uncomment this:
+ namespace :deploy do
+   task :start do ; end
+   task :stop do ; end
+   task :restart, :roles => :app, :except => { :no_release => true } do
+     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+   end
+ end
